@@ -46,8 +46,22 @@ public class App {
             System.out.println("Sorry, not correct.");
         }
 
+        // Question 4
+        System.out.println("What was the best F1 racing team in the 2025-26 season?");
+        System.out.println("  A) Ferari");
+        System.out.println("  B) McLaren");
+        System.out.println("  C) Mercedes");
+        System.out.println("  D) Red Bull");
+        response = input.nextLine();
+        if(response.equalsIgnoreCase("B")) {
+            System.out.println("Correct! Nice work");
+            score += 1;
+        } else {
+            System.out.println("Sorry, not correct.");
+        }
+
         System.out.println();
-        System.out.println("You got " + score + "/3 correct!");
+        System.out.println("You got " + score + "/4 correct!");
 
         //Close the Scanner
         input.close();
